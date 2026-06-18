@@ -5,1212 +5,404 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacob Martin S - Portfolio</title>
-
+  <title>Jacob Martin S | MERN & React Native Developer</title>
+  <meta
+    name="description"
+    content="Portfolio of Jacob Martin S, a MERN Stack and React Native developer building polished web and mobile products." />
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <!--
-    - #MAIN
-  -->
+  <div class="page-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
 
-  <main>
-    <!--
-      - #SIDEBAR
-    -->
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-mark">JM</span>
+        <span class="brand-text">Jacob Martin S</span>
+      </a>
 
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my photo.jpg" alt="Jacob Martin" width="80" />
-        </figure>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
 
-        <div class="info-content">
-          <h1 class="name" title="Jacob Martin">Jacob Martin</h1>
+      <nav class="site-nav" data-site-nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-          <p class="title">MERN & React Native Developer</p>
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">MERN Stack & React Native Developer</p>
+          <h1>
+            I build web and mobile products that feel
+            <span>fast, polished, and production-ready.</span>
+          </h1>
+          <p class="hero-text">
+            I’m Jacob Martin S, a full-stack developer from Trichy focused on React, Node.js, Next.js, MongoDB, and
+            React Native. I turn product ideas into elegant, scalable experiences that teams can launch with
+            confidence.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Hire Me</a>
+            <a class="button button-secondary" href="./assets/resume/JACOB_MARTIN_RESUME.pdf" target="_blank"
+              rel="noreferrer">View Resume</a>
+          </div>
+
+          <ul class="hero-facts">
+            <li>
+              <strong data-count="2">0</strong>
+              <span>Years building live products</span>
+            </li>
+            <li>
+              <strong data-count="8">0</strong>
+              <span>Portfolio-grade projects</span>
+            </li>
+            <li>
+              <strong data-count="4">0</strong>
+              <span>Core product areas</span>
+            </li>
+          </ul>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:sjacobmartin@gmail.com" class="contact-link">sjacobmartin@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
+        <div class="hero-visual reveal reveal-delay">
+          <div class="portrait-card">
+            <div class="portrait-glow"></div>
+            <img src="./assets/images/my photo.jpg" alt="Jacob Martin S portrait" />
+            <div class="floating-chip chip-top">
               <ion-icon name="phone-portrait-outline"></ion-icon>
+              <span>React Native</span>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+916381671588" class="contact-link">+91 6381671588</a>
+            <div class="floating-chip chip-bottom">
+              <ion-icon name="rocket-outline"></ion-icon>
+              <span>Launch-ready builds</span>
             </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2004-10-03">October 03, 2004</time>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>1/159 Somarsamepettai, Trichy 620102, India</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/jacobmartins/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <!-- <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li> -->
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/jacobjacobmartin/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a results-driven MERN Stack and React Native Developer based in Trichy,
-            with over 2 years of professional experience building scalable web and
-            mobile applications. I specialize in bridging the gap between complex
-            backend architectures and seamless, high-performance user interfaces.
-          </p>
-
-          <p>
-            My expertise lies in developing robust full-stack solutions using
-            <strong>React, Next.js, and Node.js</strong>, while crafting native-quality
-            mobile experiences with <strong>React Native</strong>. From managing
-            containerized environments with <strong>Docker</strong> to optimizing
-            performance with <strong>Redis</strong>, my goal is to build digital products
-            that are not only functional and user-friendly but also engineered for
-            growth and efficiency.
-          </p>
-        </section>
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a
-                  professional level.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and
-                  Android.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="server-outline" style="font-size: 40px; color: #ff6b6b"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">DBMS</h4>
-
-                <p class="service-item-text">
-                  Database management and administration for efficient data
-                  handling and retrieval.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!--
-          - skills showcase
-        -->
-
-        <section class="testimonials">
-          <h3 class="h3 testimonials-title">Core Competencies</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-            <li class="testimonials-item">
-              <div class="content-card">
-                <div class="testimonials-avatar-box">
-                  <ion-icon name="code-slash-outline" style="font-size: 40px; color: #ffc107"></ion-icon>
-                </div>
-
-                <h4 class="h4 testimonials-item-title">
-                  Frontend Development
-                </h4>
-
-                <div class="testimonials-text">
-                  <p>
-                    Expert in React, Next.js, and TypeScript. Building
-                    responsive, high-performance web applications with modern
-                    UI/UX principles.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card">
-                <div class="testimonials-avatar-box">
-                  <ion-icon name="server-outline" style="font-size: 40px; color: #ff6b6b"></ion-icon>
-                </div>
-
-                <h4 class="h4 testimonials-item-title">
-                  Backend Development
-                </h4>
-
-                <div class="testimonials-text">
-                  <p>
-                    Proficient in Node.js, Express.js, and Spring Boot.
-                    Designing scalable server architectures and RESTful APIs
-                    with strong database optimization.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card">
-                <div class="testimonials-avatar-box">
-                  <ion-icon name="phone-portrait-outline" style="font-size: 40px; color: #4ecdc4"></ion-icon>
-                </div>
-
-                <h4 class="h4 testimonials-item-title">Mobile Development</h4>
-
-                <div class="testimonials-text">
-                  <p>
-                    Expert React Native developer for cross-platform iOS and
-                    Android applications. Experience with native tools like
-                    Xcode and Android Studio.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card">
-                <div class="testimonials-avatar-box">
-                  <ion-icon name="settings-outline" style="font-size: 40px; color: #95e1d3"></ion-icon>
-                </div>
-
-                <h4 class="h4 testimonials-item-title">DevOps & Tools</h4>
-
-                <div class="testimonials-text">
-                  <p>
-                    Proficient in Docker containerization, serverless
-                    architectures, and cloud deployment. Experience with
-                    caching and database optimization.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!--
-          - tech stack
-        -->
-
-        <section class="clients">
-          <h3 class="h3 clients-title">Tech Stack</h3>
-
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(
-                      135deg,
-                      #667eea 0%,
-                      #764ba2 100%
-                    );
-                    border-radius: 8px;
-                  ">
-                <p style="color: white; font-weight: 600; text-align: center">
-                  React
-                </p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(
-                      135deg,
-                      #f093fb 0%,
-                      #f5576c 100%
-                    );
-                    border-radius: 8px;
-                  ">
-                <p style="color: white; font-weight: 600; text-align: center">
-                  Node.js
-                </p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(
-                      135deg,
-                      #4facfe 0%,
-                      #00f2fe 100%
-                    );
-                    border-radius: 8px;
-                  ">
-                <p style="color: white; font-weight: 600; text-align: center">
-                  MongoDB
-                </p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(
-                      135deg,
-                      #4facfe 0%,
-                      #00f2fe 100%
-                    );
-                    border-radius: 8px;
-                  ">
-                <p style="color: white; font-weight: 600; text-align: center">
-                  React Native
-                </p>
-              </div>
-            </li>
-            <li class="clients-item">
-              <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(
-                      135deg,
-                      #fa709a 0%,
-                      #fee140 100%
-                    );
-                    border-radius: 8px;
-                  ">
-                <p style="color: white; font-weight: 600; text-align: center">
-                  Docker
-                </p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(
-                      135deg,
-                      #30cfd0 0%,
-                      #330867 100%
-                    );
-                    border-radius: 8px;
-                  ">
-                <p style="color: white; font-weight: 600; text-align: center">
-                  TypeScript
-                </p>
-              </div>
-            </li>
-
-            <li class="clients-item">
-              <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(
-                      135deg,
-                      #a8edea 0%,
-                      #fed6e3 100%
-                    );
-                    border-radius: 8px;
-                  ">
-                <p style="color: #333; font-weight: 600; text-align: center">
-                  Express.js
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
           </div>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Diploma in Computer Engineering — Seshasayee Institute of
-                Technology, Ariyamangalam, Trichy
-              </h4>
+          <div class="hero-panel">
+            <p>Current focus</p>
+            <h2>Shipping professional apps with modern UX and dependable backend architecture.</h2>
+          </div>
+        </div>
+      </section>
 
-              <span>CGPA: 90.45</span>
+      <section class="trust-strip reveal">
+        <div>React</div>
+        <div>Next.js</div>
+        <div>Node.js</div>
+        <div>MongoDB</div>
+        <div>React Native</div>
+        <div>TypeScript</div>
+        <div>Docker</div>
+        <div>Redis</div>
+      </section>
 
-              <p class="timeline-text">
-                Diploma in Computer Engineering with a CGPA of 90.45.
+      <section class="section" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Why Jacob</p>
+          <h2>Professional execution with product thinking.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="card intro-card reveal">
+            <p>
+              I specialize in building user-focused digital products across web and mobile. My work blends modern
+              frontend craft, efficient backend systems, and the kind of clean product presentation that gives teams
+              confidence during demos, launches, and hiring conversations.
+            </p>
+            <p>
+              From responsive admin tools to mobile-first applications, I care about reliability, performance, and the
+              small visual details that make software feel premium.
+            </p>
+          </article>
+
+          <div class="value-grid">
+            <article class="card value-card reveal">
+              <ion-icon name="layers-outline"></ion-icon>
+              <h3>Full-Stack Delivery</h3>
+              <p>From database design to frontend polish, I build complete product flows instead of isolated screens.
               </p>
-            </li>
+            </article>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                BCA — Tamil Nadu Open University
-              </h4>
+            <article class="card value-card reveal">
+              <ion-icon name="sparkles-outline"></ion-icon>
+              <h3>Professional UI Quality</h3>
+              <p>Interfaces are responsive, visually strong, and crafted to make a powerful first impression.</p>
+            </article>
 
-              <span>Percentage: 90%</span>
+            <article class="card value-card reveal">
+              <ion-icon name="code-working-outline"></ion-icon>
+              <h3>Cross-Platform Mindset</h3>
+              <p>Web and mobile experiences stay aligned so products feel consistent across every touchpoint.</p>
+            </article>
 
-              <p class="timeline-text">
-                Bachelor of Computer Applications completed with 90%.
-              </p>
-            </li>
-          </ol>
-        </section>
+            <article class="card value-card reveal">
+              <ion-icon name="server-outline"></ion-icon>
+              <h3>Scalable Foundations</h3>
+              <p>APIs, containers, caching, and databases are built with growth and maintainability in mind.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+      <section class="section" id="experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience & Education</p>
+          <h2>Proof of consistency, not just potential.</h2>
+        </div>
+
+        <div class="timeline-layout">
+          <article class="card timeline-card reveal">
+            <div class="timeline-title">
+              <ion-icon name="briefcase-outline"></ion-icon>
+              <h3>Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Monitpro Solution Pvt Ltd
-              </h4>
-
-              <span>2 years</span>
-
-              <p class="timeline-text">
-                Full-stack MERN developer experience working on web and mobile
-                integrations.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Senchola Technology</h4>
-
-              <span>5 months</span>
-
-              <p class="timeline-text">
-                Worked on frontend and React Native projects during tenure.
-              </p>
-            </li>
-          </ol>
-        </section>
-
-      <section class="skill">
-  <h3 class="h3 skills-title">My skills</h3>
-
-  <ul class="skills-list content-card">
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">React Native (iOS & Android)</h5>
-        <data value="95">95%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 95%"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">MERN Stack (MongoDB, Express, React, Node)</h5>
-        <data value="90">90%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 90%"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Next.js & TypeScript</h5>
-        <data value="85">85%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 85%"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Backend (Spring Boot, MySQL, Redis, Docker)</h5>
-        <data value="80">80%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 80%"></div>
-      </div>
-    </li>
-  </ul>
-</section>
-      </article>
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>
-                Select category
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <p class="timeline-label">Monitpro Solution Pvt Ltd</p>
+                <h4>Full-Stack Developer</h4>
+                <p>
+                  Worked across MERN-based web development and mobile integrations, building practical solutions for
+                  business workflows and user-facing applications.
+                </p>
+                <small>2 years</small>
               </div>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <p class="timeline-label">Senchola Technology</p>
+                <h4>Frontend & React Native Developer</h4>
+                <p>
+                  Contributed to frontend interfaces and React Native application work, strengthening hands-on product
+                  delivery across platforms.
+                </p>
+                <small>5 months</small>
               </div>
-            </button>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Hospital Management System</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">GST manager</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Bride Box</h3>
-
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Cartigo</h3>
-
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Annai Wood works</h3>
-
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Delvin diamond tools</h3>
-
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Local Network Sharing</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">CateringBoys</h3>
-
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">CatringBoys</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9fdknKI60dP-AVSbChbZsJSdoo_0-uSXzJg&s"
-                    alt="React Native vulnerability" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Mobile Security</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2026-02-10">Feb 10, 2026</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    React Native Security: Common Vulnerabilities and Fixes
-                  </h3>
-
-                  <p class="blog-text">
-                    Practical overview of typical React Native security
-                    pitfalls and mitigation strategies based on real projects.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDbb0tyM4FbPukfIOH0Ka19-3Cgp1rIrHmPA&s"
-                    alt="React hardening" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Frontend</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2026-01-15">Jan 15, 2026</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Hardening React Apps: Security Best Practices
-                  </h3>
-
-                  <p class="blog-text">
-                    How to protect client-side apps from XSS, CSRF, and
-                    supply-chain risks with tooling and patterns I use
-                    day-to-day.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQNjV48Fel7RSAZCnEYUDg4YZlwDQtdUI6Q&s"
-                    alt="Android vs iOS" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Mobile</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-12-05">Dec 05, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Android vs iOS: Platform Differences for Developers
-                  </h3>
-
-                  <p class="blog-text">
-                    Key platform differences, native tooltips for performance
-                    and release processes from my mobile projects.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img
-                    src="https://www.mongodb.com/docs/compass/static/0dc18e6457998a1f37c468b14d65e831/c2e66/performance-view-full.webp"
-                    alt="MongoDB tips" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Databases</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-10-20">Oct 20, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    MongoDB at Scale: Performance & Security Tips
-                  </h3>
-
-                  <p class="blog-text">
-                    Indexing, schema design, authentication, and backup
-                    strategies I applied in production systems.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdBlUEgF3LB1M_OE_PtQPmskayl7DiYURXmQ&s"
-                    alt="Secure API design" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Backend</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-08-12">Aug 12, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Secure API Design with Node.js and Express
-                  </h3>
-
-                  <p class="blog-text">
-                    Practical patterns for authentication, rate limiting,
-                    validation, and error handling I follow.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSic_-gFTAQl_kWM8wKC8XJefmbmdNAQnx6sQ&s"
-                    alt="TypeScript benefits" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Developer Tools</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-06-01">Jun 01, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Using TypeScript to Prevent Runtime Bugs
-                  </h3>
-
-                  <p class="blog-text">
-                    Real examples where TypeScript saved days of debugging and
-                    how I structure types in full-stack projects.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/1*-w2toXlpvxT8pE6dQe3IMQ.png" alt="React performance" loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Performance</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-04-18">Apr 18, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Optimizing React Performance in Production
-                  </h3>
-
-                  <p class="blog-text">
-                    Strategies for code-splitting, memoization, rendering
-                    patterns, and measuring impact in live apps.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAg00lpZJJNhszF4uzoGYQ_b7Fh4-EHHMtQ&s" alt="Serverless AWS Lambda"
-                    loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Cloud</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-02-02">Feb 02, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Serverless Architectures: When to Use AWS Lambda
-                  </h3>
-
-                  <p class="blog-text">
-                    Pros, cons, cold starts, and cost patterns from projects
-                    where I migrated endpoints to Lambda.
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1200/1*YVcICv4gTKSGo7oB_1rqqw.png" alt="Docker for developers"
-                    loading="lazy" />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">DevOps</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-11-20">Nov 20, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Docker for Developers: Local to Production
-                  </h3>
-
-                  <p class="blog-text">
-                    Practical Docker workflows I use for developing, testing,
-                    and deploying full-stack applications.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4944.597892182753!2d78.63559857504247!3d10.816027489335154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa5f759b9f621b%3A0x3aba4618cfb3fb9d!2sSomarasampettai%2C%20Tamil%20Nadu%20620102!5e1!3m2!1sen!2sin!4v1770721284615!5m2!1sen!2sin"
-              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <p style="margin-bottom: 12px; color: #ffffff">
-            Or email me directly at
-            <a href="mailto:sjacobmartin@gmail.com" style="color: #ffffff">sjacobmartin@gmail.com</a>
-          </p>
-
-          <form class="form" onsubmit="sendToWhatsApp(event)">
-            <div class="input-wrapper">
-              <input type="text" id="fullname" class="form-input" placeholder="Full name" required />
-
-              <input type="email" id="email" class="form-input" placeholder="Email Address" required />
+            </div>
+          </article>
+
+          <article class="card timeline-card reveal reveal-delay">
+            <div class="timeline-title">
+              <ion-icon name="school-outline"></ion-icon>
+              <h3>Education</h3>
             </div>
 
-            <textarea id="message" class="form-input" placeholder="Your Message" required></textarea>
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <p class="timeline-label">Seshasayee Institute of Technology, Trichy</p>
+                <h4>Diploma in Computer Engineering</h4>
+                <p>Strong academic performance with a CGPA of 90.45, building a solid technical foundation.</p>
+                <small>CGPA: 90.45</small>
+              </div>
 
-            <button class="form-btn" type="submit">
-              <span>Send via WhatsApp</span>
-            </button>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <p class="timeline-label">Tamil Nadu Open University</p>
+                <h4>Bachelor of Computer Applications</h4>
+                <p>Completed BCA with 90%, strengthening software and application development knowledge.</p>
+                <small>Score: 90%</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-            <button class="form-btn" type="button" onclick="sendEmail()">
-              <span>Send via Email</span>
-            </button>
+      <section class="section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects that show range across web, mobile, and business software.</h2>
+        </div>
 
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
+        <div class="projects-grid">
+          <article class="project-card card reveal">
+            <img src="./assets/images/project-1.jpg" alt="Hospital Management System" />
+            <div class="project-content">
+              <span>Web Platform</span>
+              <h3>Hospital Management System</h3>
+              <p>Structured workflow-focused platform experience for handling hospital operations with a clean interface.
+              </p>
+            </div>
+          </article>
 
-  <!--
-    - custom js link
-  -->
+          <article class="project-card card reveal">
+            <img src="./assets/images/project-2.png" alt="GST Manager" />
+            <div class="project-content">
+              <span>Business Tool</span>
+              <h3>GST Manager</h3>
+              <p>Business-oriented web application designed to simplify financial and operational management tasks.</p>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <img src="./assets/images/project-3.jpg" alt="Bride Box" />
+            <div class="project-content">
+              <span>Brand Website</span>
+              <h3>Bride Box</h3>
+              <p>Visually focused web experience built to present a polished brand identity with strong presentation
+                quality.</p>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <img src="./assets/images/project-4.png" alt="Cartigo" />
+            <div class="project-content">
+              <span>Application</span>
+              <h3>Cartigo</h3>
+              <p>Product-style application concept with a mobile-friendly interface and user-centric interaction flow.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <img src="./assets/images/project-8.jpg" alt="CateringBoys mobile app" />
+            <div class="project-content">
+              <span>Mobile App</span>
+              <h3>CateringBoys</h3>
+              <p>Cross-platform app presence backed by a published Play Store listing, demonstrating production delivery.
+              </p>
+              <a href="https://play.google.com/store/apps/details?id=com.cateringboys" target="_blank"
+                rel="noreferrer">View App</a>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <img src="./assets/images/project-7.png" alt="Local Network Sharing" />
+            <div class="project-content">
+              <span>Utility Project</span>
+              <h3>Local Network Sharing</h3>
+              <p>Practical development work focused on usability, connectivity, and clean interaction patterns.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Core Stack</p>
+          <h2>Technical strengths that help me deliver complete products.</h2>
+        </div>
+
+        <div class="skills-layout">
+          <article class="card reveal">
+            <div class="skill-row">
+              <div>
+                <h3>React Native</h3>
+                <p>Cross-platform mobile experiences for Android and iOS.</p>
+              </div>
+              <strong>95%</strong>
+            </div>
+            <div class="skill-bar"><span style="width: 95%"></span></div>
+
+            <div class="skill-row">
+              <div>
+                <h3>MERN Stack</h3>
+                <p>MongoDB, Express, React, and Node for full-stack delivery.</p>
+              </div>
+              <strong>90%</strong>
+            </div>
+            <div class="skill-bar"><span style="width: 90%"></span></div>
+
+            <div class="skill-row">
+              <div>
+                <h3>Next.js & TypeScript</h3>
+                <p>Modern frontend architecture with scalable code quality.</p>
+              </div>
+              <strong>85%</strong>
+            </div>
+            <div class="skill-bar"><span style="width: 85%"></span></div>
+
+            <div class="skill-row">
+              <div>
+                <h3>Backend & Infra</h3>
+                <p>Spring Boot, MySQL, Redis, and Docker for dependable systems.</p>
+              </div>
+              <strong>80%</strong>
+            </div>
+            <div class="skill-bar"><span style="width: 80%"></span></div>
+          </article>
+
+          <article class="card stack-card reveal reveal-delay">
+            <div class="stack-group">
+              <span>Frontend</span>
+              <p>React, Next.js, TypeScript, JavaScript, HTML, CSS</p>
+            </div>
+            <div class="stack-group">
+              <span>Mobile</span>
+              <p>React Native, Android Studio, Xcode</p>
+            </div>
+            <div class="stack-group">
+              <span>Backend</span>
+              <p>Node.js, Express.js, Spring Boot, REST APIs</p>
+            </div>
+            <div class="stack-group">
+              <span>Database & DevOps</span>
+              <p>MongoDB, MySQL, Redis, Docker</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <article class="contact-banner card reveal">
+          <div>
+            <p class="eyebrow">Let’s Build Something Strong</p>
+            <h2>If you want a developer who can ship polished web and mobile experiences, let’s talk.</h2>
+            <p class="contact-copy">
+              Available for full-time roles, freelance opportunities, and product-focused development work.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:sjacobmartin@gmail.com">sjacobmartin@gmail.com</a>
+            <a class="button button-secondary" href="tel:+916381671588">+91 6381671588</a>
+          </div>
+        </article>
+
+        <div class="contact-grid">
+          <article class="contact-card card reveal">
+            <ion-icon name="location-outline"></ion-icon>
+            <h3>Location</h3>
+            <p>Trichy, India</p>
+          </article>
+
+          <article class="contact-card card reveal">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/jacobmartins/" target="_blank"
+              rel="noreferrer">linkedin.com/in/jacobmartins</a>
+          </article>
+
+          <article class="contact-card card reveal">
+            <ion-icon name="logo-github"></ion-icon>
+            <h3>GitHub</h3>
+            <a href="https://github.com/jacobmartin2004" target="_blank"
+              rel="noreferrer">github.com/jacobmartin2004</a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    function sendToWhatsApp(event) {
-      event.preventDefault();
-
-      var name = document.getElementById("fullname").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
-
-      var phoneNumber = "916381671588"; // 91 is India country code
-
-      var url =
-        "https://wa.me/" +
-        phoneNumber +
-        "?text=" +
-        encodeURIComponent(
-          "Name: " +
-          name +
-          "\n" +
-          "Email: " +
-          email +
-          "\n" +
-          "Message: " +
-          message,
-        );
-
-      window.open(url, "_blank");
-    }
-
-  </script>
-  <script>
-    function sendEmail() {
-      const name = document.getElementById("fullname").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      const to = "sjacobmartin@gmail.com";
-      const subject = "New Contact Form Message";
-      const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-
-      const gmailURL =
-        "https://mail.google.com/mail/?view=cm&fs=1" +
-        "&to=" + encodeURIComponent(to) +
-        "&su=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body);
-
-      window.open(gmailURL, "_blank");
-    }
-  </script>
-
-
 </body>
 
 </html>
